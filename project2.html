@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Numbers from 1 to 1000</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #oddNumbers {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Odd Numbers from 1 to 1000</h1>
+    <div id="oddNumbers"></div>
+
+    <script>
+        // Function to display odd numbers
+        function displayOddNumbers() {
+            let output = '';
+            for (let i = 1; i <= 1000; i++) {
+                if (i % 2 !== 0) { // Check if the number is odd
+                    output += i + '<br>';
+                }
+            }
+            document.getElementById('oddNumbers').innerHTML = output;
+        }
+
+        // Call the function to display odd numbers
+        displayOddNumbers();
+    </script>
+</body>
+</html
